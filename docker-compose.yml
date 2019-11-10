@@ -1,0 +1,9 @@
+version: "3"
+services:
+  webapp:
+    build: .
+    image: interncompass
+    ports:
+        - "3000:3000"
+    volumes:
+        - "/var/lib/postgresql/data"
